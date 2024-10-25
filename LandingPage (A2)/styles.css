@@ -1,0 +1,120 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.navbar .nav-menu a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.navbar .nav-menu .dropdown {
+    position: relative;
+}
+
+.navbar .nav-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.navbar .nav-menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-menu .dropdown-menu a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    flex: 1;
+}
+
+.hero .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff6200;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
